@@ -12,8 +12,7 @@ def dependencies():
     pass
 
 def tamper(payload, **kwargs):
-    retVal = payload
     r = requests.get('https://studentportal.elfu.org/validator.php')
-    token = 'token=' + urllib.quote_plus(r.text)
-    retVal = retVal+'&'+token
+    token = 'token=' + r.text
+    retVal = payload+'&'+token
     return retVal
