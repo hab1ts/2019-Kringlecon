@@ -4,7 +4,7 @@ import csv
 csv_list = []
 user_agents = []
 
-with open("C:\\Users\\Jay\\Desktop\\http.log") as json_file:
+with open('http.log') as json_file:
     data = json.load(json_file)
     SQLi        = ['UNION', "1' ","'1=1"]           #29
     xss         = ['<script>', 'alert(']     #16
